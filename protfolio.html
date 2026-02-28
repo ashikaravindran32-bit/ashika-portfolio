@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashika Ravindran | Full-Stack Python & Django Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    :root {
+      --primary: #a855f7;
+      --accent: #facc15;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #1e293b, #312e81);
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(transparent, #0f172a);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    
+    header p {
+      font-size: 20px;
+      margin: 12px 0 0;
+      opacity: 0.95;
+    }
+    
+    .contact-bar {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .contact-bar a {
+      color: #f1f5f9;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .contact-bar a:hover {
+      color: var(--primary);
+    }
+    
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      color: var(--accent);
+      font-size: 28px;
+      margin-bottom: 30px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+    
+    .card {
+      background: #1e293b;
+      padding: 32px;
+      border-radius: 16px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    ul li {
+      margin-bottom: 12px;
+      position: relative;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    
+    .skill-item {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    
+    .skill-item:hover {
+      background: #312e81;
+      transform: scale(1.03);
+    }
+    
+    footer {
+      background: #1e293b;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      header { padding: 60px 20px; }
+      header h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ashika Ravindran</h1>
+  <p>Full-Stack Developer | Python • Django • Next.js • REST APIs</p>
+  
+  <div class="contact-bar">
+    <a href="tel:+917305036525">📞 +91 73050 36525</a>
+    <a href="mailto:ashikaravindran32@gmail.com">✉️ ashikaravindran32@gmail.com</a>
+    <a href="https://www.linkedin.com/in/ashika-ravindran/" target="_blank">🔗 linkedin.com/in/ashika-ravindran</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      Full-stack Python/Django developer with over 1 year of hands-on experience building production-ready web applications. 
+      Proficient in backend architecture, RESTful API development, PostgreSQL database management, and modern frontend development using Next.js, JavaScript, HTML & CSS. 
+      Strong focus on clean code, secure authentication, smooth frontend-backend integration, and delivering reliable, performant features.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <p><strong>Bachelor of Computer Application (BCA)</strong></p>
+    <p>Arulmigu Palani Andavar Arts College for Women, Tamil Nadu</p>
+    <p><strong>July 2021 – June 2024</strong> | CGPA: 8.0</p>
+  </div>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+  <div class="card">
+    <p><strong>Full-Stack Developer</strong> — Adhoc Softwares, Coimbatore, India</p>
+    <p><strong>December 2024 – Present</strong></p>
+    <ul>
+      <li>Built and maintained full-stack web applications using Python & Django (backend) alongside Next.js, JavaScript, HTML & CSS (frontend), ensuring seamless integration via RESTful APIs</li>
+      <li>Developed robust RESTful APIs, designed & optimized PostgreSQL databases using Django ORM, and handled secure authentication + role-based access control</li>
+      <li>Implemented responsive user interfaces and interactive components with Next.js, improving user experience and frontend performance</li>
+      <li>Performed CRUD operations, form validation, complex business logic, and cross-functional collaboration to deliver features on schedule</li>
+      <li>Actively contributed to code reviews, testing, query optimization, and best practices to maintain high code quality across frontend and backend</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    
+    <div class="card">
+      <h3>Online Admission Management System</h3>
+      <p>
+        Full-stack Django web application automating the complete college admission workflow with secure user flows and admin controls.
+      </p>
+      <ul>
+        <li>Developed backend with Django (authentication, application submission, multi-level approval workflow) and PostgreSQL database</li>
+        <li>Built responsive frontend interface using Next.js, JavaScript, HTML & CSS for student dashboard, form submission, and real-time status tracking</li>
+        <li>Created powerful admin dashboard with Django ORM, forms, and dynamic data visualization for managing applications</li>
+      </ul>
+      <p><strong>Tech:</strong> Django, Django REST Framework, PostgreSQL, Next.js, JavaScript, HTML, CSS</p>
+    </div>
+
+    <div class="card">
+      <h3>Business i — Business ERP System</h3>
+      <p>
+        Comprehensive full-stack ERP platform for managing inventory, sales, purchases, user roles, and business analytics.
+      </p>
+      <ul>
+        <li>Designed backend modules (User Management, Inventory, Sales, Purchases, Reports) using Django MVC architecture and PostgreSQL</li>
+        <li>Implemented modern, interactive frontend dashboard and pages with Next.js, JavaScript, HTML & CSS for real-time data display and user-friendly operations</li>
+        <li>Developed analytics dashboard showing sales summaries, inventory status, and performance metrics with secure role-based access</li>
+      </ul>
+      <p><strong>Tech:</strong> Django, Django REST Framework, PostgreSQL, Next.js, JavaScript, HTML, CSS</p>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <strong>Backend & API</strong><br>
+      Python, Django, Django REST Framework
+    </div>
+    <div class="skill-item">
+      <strong>Frontend</strong><br>
+      HTML5, CSS3, JavaScript (ES6+), Next.js
+    </div>
+    <div class="skill-item">
+      <strong>Database & Tools</strong><br>
+      PostgreSQL, DBeaver, Django ORM
+    </div>
+    <div class="skill-item">
+      <strong>Cloud & DevOps</strong><br>
+      AWS
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <div class="card">
+    <p>• English (Fluent)<br>• Tamil (Native)<br>• Malayalam (Fluent)</p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Email:</strong> <a href="mailto:ashikaravindran32@gmail.com">ashikaravindran32@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+917305036525">+91 73050 36525</a></p>
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/ashika-ravindran/" target="_blank">linkedin.com/in/ashika-ravindran</a>
+    </p>
+    <p style="margin-top:20px; font-size:14px; opacity:0.8;">
+      Open to full-time full-stack opportunities | Available immediately
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ashika Ravindran • Professional Portfolio</p>
+</footer>
+
+</body>
+</html>
